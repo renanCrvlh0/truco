@@ -8,6 +8,11 @@ class TrucoContador extends StatefulWidget {
 }
 
 class _TrucoContadorState extends State<TrucoContador> {
+  int _contadorPontuacao1 = 0;
+  int _contadorPontuacao2 = 0;
+  int _contadorPlacar1 = 0;
+  int _contadorPlacar2 = 0;
+
   @override
   Widget build(BuildContext context) {
     final largura = MediaQuery.of(context).size.width;
@@ -122,16 +127,25 @@ class _TrucoContadorState extends State<TrucoContador> {
                             ),
                           ),
                           const SizedBox(height: 20),
-                          const Text(
-                            '0',
-                            style: TextStyle(
+                          Text(
+                            '$_contadorPontuacao1',
+                            style: const TextStyle(
                               fontFamily: 'Kavoon',
                               fontWeight: FontWeight.bold,
                               fontSize: 70,
                             ),
                           ),
                           const SizedBox(height: 50),
-                          Image.asset('assets/images/carta_copas.png'),
+                          InkWell(
+                            onTap:() {
+                              setState(() {
+                                _contadorPontuacao1++;
+                              });
+                            },
+                            child: Image.asset(
+                              'assets/images/carta_copas.png',
+                            ),
+                          ),
                           const SizedBox(height: 20),
                           InkWell(
                             child: Container(
@@ -275,16 +289,25 @@ class _TrucoContadorState extends State<TrucoContador> {
                             ),
                           ),
                           const SizedBox(height: 20),
-                          const Text(
-                            '0',
-                            style: TextStyle(
+                          Text(
+                            '$_contadorPontuacao2',
+                            style: const TextStyle(
                               fontFamily: 'Kavoon',
                               fontWeight: FontWeight.bold,
                               fontSize: 70,
                             ),
                           ),
                           const SizedBox(height: 50),
-                          Image.asset('assets/images/carta_copas.png'),
+                          InkWell(
+                            onTap:() {
+                              setState(() {
+                                _contadorPontuacao2++;
+                              });
+                            },
+                            child: Image.asset(
+                              'assets/images/carta_copas.png',
+                            ),
+                          ),
                           const SizedBox(height: 20),
                           InkWell(
                             child: Container(
