@@ -137,9 +137,11 @@ class _TrucoContadorState extends State<TrucoContador> {
                           ),
                           const SizedBox(height: 50),
                           InkWell(
-                            onTap:() {
+                            onTap: () {
                               setState(() {
-                                _contadorPontuacao1++;
+                                if(_contadorPontuacao1 < 12) {
+                                  _contadorPontuacao1++;
+                                }                                
                               });
                             },
                             child: Image.asset(
@@ -148,6 +150,13 @@ class _TrucoContadorState extends State<TrucoContador> {
                           ),
                           const SizedBox(height: 20),
                           InkWell(
+                            onTap: () {
+                              setState(() {
+                                if(_contadorPontuacao1 < 12) {
+                                  _contadorPontuacao1 += 3;
+                                }
+                              });
+                            },
                             child: Container(
                               decoration: const BoxDecoration(
                                 borderRadius:
@@ -177,6 +186,13 @@ class _TrucoContadorState extends State<TrucoContador> {
                           Row(
                             children: [
                               InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    if(_contadorPontuacao1 < 12) {
+                                      _contadorPontuacao1 += 6;
+                                    }
+                                  });
+                                },
                                 child: Container(
                                   decoration: const BoxDecoration(
                                     borderRadius:
@@ -187,7 +203,8 @@ class _TrucoContadorState extends State<TrucoContador> {
                                   height: 40,
                                   child: const Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         '+6',
@@ -204,6 +221,13 @@ class _TrucoContadorState extends State<TrucoContador> {
                               ),
                               const SizedBox(width: 15),
                               InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    if(_contadorPontuacao1 < 12) {
+                                      _contadorPontuacao1 += 9;
+                                    }
+                                  });
+                                },
                                 child: Container(
                                   decoration: const BoxDecoration(
                                     borderRadius:
@@ -214,7 +238,8 @@ class _TrucoContadorState extends State<TrucoContador> {
                                   height: 40,
                                   child: const Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         '+9',
@@ -231,6 +256,13 @@ class _TrucoContadorState extends State<TrucoContador> {
                               ),
                               const SizedBox(width: 15),
                               InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    if(_contadorPontuacao1 < 12) {
+                                      _contadorPontuacao1 += 12;
+                                    }
+                                  });
+                                },
                                 child: Container(
                                   decoration: const BoxDecoration(
                                     borderRadius:
@@ -241,7 +273,8 @@ class _TrucoContadorState extends State<TrucoContador> {
                                   height: 40,
                                   child: const Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         '+12',
@@ -299,9 +332,11 @@ class _TrucoContadorState extends State<TrucoContador> {
                           ),
                           const SizedBox(height: 50),
                           InkWell(
-                            onTap:() {
+                            onTap: () {
                               setState(() {
-                                _contadorPontuacao2++;
+                                if(_contadorPontuacao2 < 12) {
+                                  _contadorPontuacao2++;
+                                }
                               });
                             },
                             child: Image.asset(
@@ -310,6 +345,13 @@ class _TrucoContadorState extends State<TrucoContador> {
                           ),
                           const SizedBox(height: 20),
                           InkWell(
+                            onTap: () {
+                              setState(() {
+                                if(_contadorPontuacao2 < 12) {
+                                  _contadorPontuacao2 += 3;
+                                }
+                              });
+                            },
                             child: Container(
                               decoration: const BoxDecoration(
                                 borderRadius:
@@ -339,6 +381,13 @@ class _TrucoContadorState extends State<TrucoContador> {
                           Row(
                             children: [
                               InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    if(_contadorPontuacao2 < 12) {
+                                      _contadorPontuacao2 += 6;
+                                    }
+                                  });
+                                },
                                 child: Container(
                                   decoration: const BoxDecoration(
                                     borderRadius:
@@ -349,7 +398,8 @@ class _TrucoContadorState extends State<TrucoContador> {
                                   height: 40,
                                   child: const Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         '+6',
@@ -366,6 +416,13 @@ class _TrucoContadorState extends State<TrucoContador> {
                               ),
                               const SizedBox(width: 15),
                               InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    if(_contadorPontuacao2 < 12) {
+                                      _contadorPontuacao2 += 9;
+                                    }
+                                  });
+                                },
                                 child: Container(
                                   decoration: const BoxDecoration(
                                     borderRadius:
@@ -376,7 +433,8 @@ class _TrucoContadorState extends State<TrucoContador> {
                                   height: 40,
                                   child: const Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         '+9',
@@ -393,6 +451,16 @@ class _TrucoContadorState extends State<TrucoContador> {
                               ),
                               const SizedBox(width: 15),
                               InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    if(_contadorPontuacao2 < 12 && _contadorPontuacao2 == 0) {
+                                      _contadorPontuacao2 += 12;
+                                    }
+                                    else {
+                                      _contadorPontuacao2 = 12;
+                                    }
+                                  });
+                                },
                                 child: Container(
                                   decoration: const BoxDecoration(
                                     borderRadius:
@@ -403,7 +471,8 @@ class _TrucoContadorState extends State<TrucoContador> {
                                   height: 40,
                                   child: const Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Text(
                                         '+12',
