@@ -263,7 +263,7 @@ class _TrucoContadorState extends State<TrucoContador> {
                     ),
                     Container(
                       width: 1,
-                      height: altura / 1.5,
+                      height: altura,
                       margin: const EdgeInsets.all(8.0),
                       decoration: const BoxDecoration(
                         border: Border(
